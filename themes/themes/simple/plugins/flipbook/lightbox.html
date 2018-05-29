@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/flipbook.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        jQuery("#book1").swipeBook({
+
+            pdfUrl: "pdf/example.pdf",
+
+            lightBox:true
+
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <div id="book1">Click to read PDF</div>
+</body>
+
+</html>

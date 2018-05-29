@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/flipbook.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        jQuery("#book1").swipeBook({
+
+            pdfUrl: "pdf/example.pdf",
+
+            skin:'light',
+            menuBackground:'none',
+            menuOverBook: true,
+            menuMargin:2,
+
+            btnPaddingV: 8,
+            btnPaddingH: 8,
+            btnMargin:2,
+            btnBorder: '1px solid rgba(255,255,255,.5)',
+            btnColor: '#fff',
+            btnBackground: 'rgba(0,0,0,.4)',
+
+            sideBtnSize: 20,
+            sideBtnColor: '#fff',
+            sideBtnBackground: 'none',
+            sideBtnTextShadow:'0 0 3px #000',
+
+            closeBtnColor: '#fff',
+            closeBtnBackground: 'rgba(0,0,0,.4)'
+
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <div id="book1"></div>
+</body>
+
+</html>

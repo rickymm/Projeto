@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/flipbook.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        jQuery("#book1").swipeBook({
+
+            pdfUrl: "pdf/example.pdf",
+
+            currentPage: {
+                enabled: true,
+                title: "Current page"
+            },
+            btnNext: {
+                enabled: true,
+                title: "Next page",
+                icon: "fa-angle-right"
+            },
+            btnLast: {
+                enabled: false,
+                title: "Last page",
+                icon: "fa-angle-double-right"
+            },
+            btnPrev: {
+                enabled: true,
+                title: "Previous page",
+                icon: "fa-angle-left"
+            },
+            btnFirst: {
+                enabled: false,
+                title: "First page",
+                icon: "fa-angle-double-left"
+            },
+            btnZoomIn: {
+                enabled: true,
+                title: "Zoom in",
+                icon: "fa-plus"
+            },
+            btnZoomOut: {
+                enabled: true,
+                title: "Zoom out",
+                icon: "fa-minus"
+            },
+            btnToc: {
+                enabled: true,
+                title: "Table of content",
+                icon: "fa-list-ol"
+            },
+            btnThumbs: {
+                enabled: true,
+                title: "Pages",
+                icon: "fa-th-large"
+            },
+            btnShare: {
+                enabled: true,
+                title: "Share",
+                icon: "fa-link"
+            },
+            btnDownloadPages: {
+                enabled: true,
+                title: "Download pages",
+                icon: "fa-download",
+                url: "pdf/example.pdf",
+                name: "example.pdf",
+            },
+            btnDownloadPdf: {
+                forceDownload: false,
+                enabled: true,
+                title: "Download PDF",
+                icon: "fa-file",
+                url: "pdf/example.pdf",
+                openInNewWindow: true
+            },
+            btnExpand: {
+                enabled: true,
+                title: "Toggle fullscreen",
+                icon: "fa-expand",
+                iconAlt: "fa-compress"
+            },
+            btnPrint: {
+                enabled: true,
+                title: "Print",
+                icon: "fa-print",
+                icon2: "print",
+            },
+
+            btnAutoplay: {
+                enabled: true,
+                title: "Autoplay",
+                icon: "fa-play"
+            }
+
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <div id="book1"></div>
+</body>
+
+</html>
